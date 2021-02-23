@@ -1,7 +1,3 @@
-# sweeter-tweeter
-
-Twitter but simpler. ReactJs, Redux, Google Authentication, Firebase Firestore, Firebase Storage, persisted state through refresh
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
