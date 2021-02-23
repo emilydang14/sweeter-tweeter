@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import "./App.css";
+import { connect } from "react-redux";
+//Firebase Firestore, Google Authentication with Firebase
+//Material UI, CSS Modules
+//BEM naming system
+import Header from "./containers/Header/Header";
+import Homepage from "./containers/Homepage/Homepage";
+import Posts from "./containers/Posts/Posts";
+import NewPost from "./containers/NewPost/NewPost";
+const App = (props) => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Homepage />
+      {props.isAuth ? (
+        <>
+          <NewPost />
+          <Posts />
+        </>
+      ) : null}
+      <a
+        style={{ textDecoration: "none", textAlign: "center" }}
+        href="https://emilydang.dev/"
+      >
+        <p>Emily Dang © 2021</p>
+      </a>
     </div>
   );
-}
+};
+const mapStateToProps = (state) => {
+  return {
+    isAuth: state.auth.user !== null,
+  };
+};
 
-export default App;
+export default connect(mapStateToProps, null)(App);

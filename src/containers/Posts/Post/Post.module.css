@@ -1,0 +1,93 @@
+.Post {
+  position: relative;
+  min-width: 250px;
+  width: 45%;
+  min-height: 500px;
+  height: fit-content;
+  outline: none;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 30px;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.Post_author_info {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  padding: 10px 10px;
+  max-height: 100px;
+}
+.Post_author_info_ava {
+  max-width: 30%;
+  width: fit-content;
+  height: 30%;
+  display: flex;
+  align-items: center;
+}
+.Post_author_info_ava_img {
+  max-height: 30px;
+  object-fit: contain;
+}
+.Post_author_info p {
+  margin: 5px;
+  height: 100%;
+}
+
+.Post_img_container {
+  text-align: center;
+  width: 100%;
+  background-color: #ffff;
+}
+.Post_img_img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.Post_caption {
+  width: 90%;
+  padding: 15px 10px;
+  max-height: 150px;
+}
+
+.Post_comts {
+  width: 90%;
+  padding: 0 5px 0 10px;
+  overflow: scroll;
+  max-height: 200px;
+  outline: none;
+  margin: 20px 0;
+}
+
+.Post_newComt {
+  overflow: hidden;
+  text-align: center;
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.Post_newComt_input {
+  font-size: 16px;
+  min-height: 40px;
+  width: 200px;
+  min-width: 85%;
+  padding: 15px 10px 0 10px;
+  background-color: transparent;
+  border-bottom: 2px solid #f5e9e5;
+  outline: none;
+  font-family: "Crimson Pro", serif;
+}
+
+.Post_newComt_btn {
+  width: 15%;
+}
