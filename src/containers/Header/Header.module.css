@@ -1,0 +1,31 @@
+.Header {
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10%;
+  min-height: 150px;
+  background-color: #fffafa;
+}
+.Header_logo_img {
+  height: 80px;
+}
+.Header_right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: fit-content;
+}
+.Header_button_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  outline: none;
+  width: fit-content;
+  padding: 0 10px;
+}
