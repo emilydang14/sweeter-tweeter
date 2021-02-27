@@ -4,7 +4,7 @@
 
 Sweeter Tweeter is a simple blog post application where user can create a quick post with picture. The main purpose is to write a quick notes and thoughts in your mind to the app. Sweeter Tweeter using Google Authentication, user need to log in first to see the content as well as posting new post. 
 
-Simpler words, Sweeter Tweeter is the combination of Instagram and Twitter.
+Simpler words, Sweeter Tweeter is the combination of Instagram and Twitter. Sweeter Tweeter also has a persiting redux state, user datas are save in local storage, give the solution to avoid making user log in again and again when re-visit the page. 
 
 ## Technology used: 
   - React Js: React Hook
